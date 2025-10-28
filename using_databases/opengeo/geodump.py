@@ -6,7 +6,7 @@ conn = sqlite3.connect('using_databases\databases\opengeo.sqlite')
 cur = conn.cursor()
 
 cur.execute('SELECT * FROM Locations')
-fhand = codecs.open('where.js', 'w', "utf-8")
+fhand = codecs.open('using_databases\opengeo\where.js', 'w', "utf-8")
 fhand.write("myData = [\n")
 count = 0
 for row in cur :
